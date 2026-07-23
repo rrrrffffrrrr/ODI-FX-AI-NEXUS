@@ -1,0 +1,24 @@
+"""
+ODI FX AI NEXUS
+Global Configuration
+"""
+
+APP_NAME = "ODI FX AI NEXUS"
+
+VERSION = "1.0.0"
+
+AI_STATUS = "ONLINE"
+
+SYMBOL = "XAUUSD"
+
+BROKER = "OANDA"
+
+TIMEFRAME = "M5"
+
+REFRESH_RATE = 10
+
+AUTHOR = "ODI FX AI"
+
+THEME = "NEXUS"
+
+DEBUG = True
