@@ -7,7 +7,6 @@ Connected AI Trading Dashboard
 import html
 
 import streamlit as st
-import streamlit.components.v1 as components
 from streamlit_autorefresh import st_autorefresh
 
 from config import APP_NAME, VERSION, AI_STATUS
@@ -605,11 +604,10 @@ with chart_column:
     </html>
     """
 
-    components.html(
-        tradingview_html,
-        height=720,
-        scrolling=False,
-    )
+    st.iframe(
+    tradingview_html,
+    height=720,
+)
 
 
 # ==================================================
@@ -875,11 +873,10 @@ with ai_column:
     </html>
     """
 
-    components.html(
-        sphere_html,
-        height=302,
-        scrolling=False,
-    )
+    st.iframe(
+    sphere_html,
+    height=302,
+)
 
     render_html(
         f"""
