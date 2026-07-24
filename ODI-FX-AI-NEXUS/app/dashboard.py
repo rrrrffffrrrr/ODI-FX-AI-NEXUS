@@ -1864,7 +1864,7 @@ with status_column:
                     color: #FFD166;
                     font-weight: 700;
                 ">
-                    SIMULATED
+                {safe_text(market.get("data_mode", "LIVE"))} 
                 </span>
             </div>
 
